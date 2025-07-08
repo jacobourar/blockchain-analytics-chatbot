@@ -185,21 +185,21 @@ blockchain-chatbot-mcp/
 - European data residency
 - Cost optimization
 
-## 🔧 Architecture Decisions
+##  Architecture Decisions
 
 ### Why This Approach Succeeded
 
 After multiple failed attempts with:
-- ❌ LangChain community integrations
-- ❌ Custom MCP bridges  
-- ❌ Direct JSON-RPC implementations
-- ❌ JavaScript approaches
+-  LangChain community integrations
+-  Custom MCP bridges  
+-  Direct JSON-RPC implementations
+-  JavaScript approaches
 
 We succeeded with:
-- ✅ **Official Python MCP SDK**: Proper protocol compliance
-- ✅ **Async Context Management**: Reliable resource handling
-- ✅ **Custom Tool Calling**: Bridge between LLM and MCP protocols
-- ✅ **Schema Intelligence**: Embedded blockchain domain knowledge
+-  **Official Python MCP SDK**: Proper protocol compliance
+-  **Async Context Management**: Reliable resource handling
+-  **Custom Tool Calling**: Bridge between LLM and MCP protocols
+-  **Schema Intelligence**: Embedded blockchain domain knowledge
 
 ## Contributing
 
@@ -208,12 +208,6 @@ We succeeded with:
 3. Commit changes: `git commit -m 'Add amazing feature'`
 4. Push to branch: `git push origin feature/amazing-feature`
 5. Open Pull Request
-
-## Documentation
-
-- **[Complete Documentation](COMPREHENSIVE_PROJECT_DOCUMENTATION.md)**: Detailed technical reference
-- **[API Reference](docs/api.md)**: Tool and method documentation
-- **[Architecture Guide](docs/architecture.md)**: System design decisions
 
 ## Troubleshooting
 
@@ -239,14 +233,5 @@ See [Troubleshooting Guide](COMPREHENSIVE_PROJECT_DOCUMENTATION.md#troubleshooti
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- [Model Context Protocol](https://modelcontextprotocol.io/) - Standardized AI-tool communication
-- [Groq](https://groq.com/) - Fast LLM inference
-- [ClickHouse](https://clickhouse.com/) - High-performance analytics database
-- [Ethereum](https://ethereum.org/) - Consensus layer data source
 
 
----
-
-**Status**: Phase 2 Complete ✅ | **Production Ready**: Yes | **Next**: Phase 3 Development 
