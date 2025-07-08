@@ -6,19 +6,19 @@ A natural language interface for querying Ethereum consensus layer blockchain da
 [![MCP Protocol](https://img.shields.io/badge/MCP-1.9.4-green.svg)](https://modelcontextprotocol.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🚀 Overview
+## Overview
 
 Ask questions in natural language and get intelligent responses from 200M+ Ethereum consensus layer records:
 
 ```
-💬 You: "How many validators are currently active?"
+You: "How many validators are currently active?"
 
-🤖 Assistant: "Based on the latest data, there are approximately 
+Assistant: "Based on the latest data, there are approximately 
 1.98 million active validators securing the Ethereum network, 
 representing a robust and highly decentralized consensus mechanism."
 ```
 
-## ✨ Features
+## Features
 
 - **Natural Language Processing**: Ask complex blockchain questions in plain English
 - **Real-time Data**: Query live Ethereum consensus layer data (200M+ records)
@@ -26,7 +26,7 @@ representing a robust and highly decentralized consensus mechanism."
 - **Multi-turn Conversations**: Context-aware dialogue with follow-up questions
 - **Production Ready**: Robust error handling and async architecture
 
-## 📊 Supported Data
+## Supported Data
 
 - **Validators**: Status, balances, performance metrics (1.98M validators)
 - **Blocks**: Production data, attestations, proposer information (11.96M records)
@@ -34,7 +34,7 @@ representing a robust and highly decentralized consensus mechanism."
 - **Network Metrics**: Epoch summaries, participation rates (375K records)
 - **Economic Data**: Rewards, fees, EIP-1559 burn data (7.6M records)
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 User Query → Groq LLM → MCP Tools → ClickHouse DB → Ethereum Data
@@ -48,7 +48,7 @@ Natural Language Response ← Result Processing ← Query Results
 - **Database**: ClickHouse with SSH tunnel connectivity
 - **Language**: Python 3.12+ with async/await
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -108,7 +108,7 @@ python blockchain_chatbot_mcp_v3.py test
 python blockchain_chatbot_mcp_v3.py
 ```
 
-## 💬 Usage Examples
+## Usage Examples
 
 ### Basic Queries
 ```
@@ -131,7 +131,7 @@ python blockchain_chatbot_mcp_v3.py
 "Show me staking pool performance trends"
 ```
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Basic connectivity test
@@ -141,7 +141,7 @@ python blockchain_chatbot_mcp_v3.py test
 python test_chatbot_integration.py
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 blockchain-chatbot-mcp/
@@ -153,33 +153,33 @@ blockchain-chatbot-mcp/
 └── mcp-env/                              # Python virtual environment
 ```
 
-## 🛠️ Development Status
+## Development Status
 
-### ✅ Phase 1: MCP Server Infrastructure (Complete)
+### Phase 1: MCP Server Infrastructure (Complete)
 - ClickHouse database connectivity
 - MCP server setup and tool discovery
 - SSH tunnel configuration
 - Schema mapping and validation
 
-### ✅ Phase 2: LLM Integration (Complete)  
+### Phase 2: LLM Integration (Complete)  
 - Groq API integration
 - Natural language processing
 - Custom tool calling protocol
 - Multi-turn conversation support
 
-### 🚧 Phase 3: Enhanced Analytics & UI (Planned)
+### Phase 3: Enhanced Analytics & UI (Planned)
 - Web interface development
 - Advanced multi-table analytics
 - Query result caching
 - Data visualization
 
-### 📋 Phase 4: Production Deployment (Planned)
+### Phase 4: Production Deployment (Planned)
 - Docker containerization
 - Authentication & authorization
 - Monitoring & logging
 - Horizontal scaling
 
-### 🎯 Phase 5: OVH AI Migration (Planned)
+### Phase 5: OVH AI Migration (Planned)
 - Migration to OVH AI Endpoints
 - Custom model fine-tuning
 - European data residency
@@ -201,14 +201,7 @@ We succeeded with:
 - ✅ **Custom Tool Calling**: Bridge between LLM and MCP protocols
 - ✅ **Schema Intelligence**: Embedded blockchain domain knowledge
 
-## 📈 Performance
-
-- **Simple queries**: 2-4 seconds
-- **Complex analytics**: 5-10 seconds  
-- **Database scale**: 200M+ records, 8GB data
-- **Concurrent users**: Single user (Phase 2), multi-user planned (Phase 4)
-
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create feature branch: `git checkout -b feature/amazing-feature`
@@ -216,13 +209,13 @@ We succeeded with:
 4. Push to branch: `git push origin feature/amazing-feature`
 5. Open Pull Request
 
-## 📝 Documentation
+## Documentation
 
 - **[Complete Documentation](COMPREHENSIVE_PROJECT_DOCUMENTATION.md)**: Detailed technical reference
 - **[API Reference](docs/api.md)**: Tool and method documentation
 - **[Architecture Guide](docs/architecture.md)**: System design decisions
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -242,22 +235,17 @@ echo $GROQ_API_KEY  # Verify API key is set
 
 See [Troubleshooting Guide](COMPREHENSIVE_PROJECT_DOCUMENTATION.md#troubleshooting) for detailed solutions.
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Model Context Protocol](https://modelcontextprotocol.io/) - Standardized AI-tool communication
 - [Groq](https://groq.com/) - Fast LLM inference
 - [ClickHouse](https://clickhouse.com/) - High-performance analytics database
 - [Ethereum](https://ethereum.org/) - Consensus layer data source
 
-## 📞 Support
-
-- **Documentation**: [Complete Project Docs](COMPREHENSIVE_PROJECT_DOCUMENTATION.md)
-- **Issues**: [GitHub Issues](../../issues)
-- **Discussions**: [GitHub Discussions](../../discussions)
 
 ---
 
