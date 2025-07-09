@@ -43,7 +43,7 @@ Natural Language Response ← Result Processing ← Query Results
 ```
 
 **Technology Stack:**
-- **LLM**: Groq API (llama-3.1-70b-versatile)
+- **LLM**: Groq API (configurable via GROQ_MODEL environment variable)
 - **Protocol**: Model Context Protocol (MCP) with official Python SDK
 - **Database**: ClickHouse with SSH tunnel connectivity
 - **Language**: Python 3.12+ with async/await
@@ -88,8 +88,19 @@ CLICKHOUSE_SECURE=false
 
 # Groq LLM
 GROQ_API_KEY=your_groq_api_key
-GROQ_MODEL=llama-3.1-70b-versatile
+GROQ_MODEL=qwen-qwq-32b          # Any Groq model (e.g., llama-3.1-70b-versatile, mixtral-8x7b-32768, etc.)
 ```
+
+### Model Selection
+
+You can use any Groq-supported model by setting the `GROQ_MODEL` environment variable. Popular options include:
+
+- **`qwen-qwq-32b`** 
+- **`llama-3.1-70b-versatile`** 
+- **`llama-3.1-8b-instant`** 
+- **`deepseek-r1-distill-llama-70b`** 
+
+The system automatically uses your specified model for all LLM interactions. Your choice will be reflected in Groq API usage and billing.
 
 ### Setup SSH Tunnel
 
